@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- Bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+		/>
+	</head>
+	<body class="bg-light">
+		<nav class="navbar navbar-dark bg-primary mb-3">
+			<div class="container">
+				<a class="navbar-brand" href="/">Github Profile Finder</a>
+			</div>
+		</nav>
+		<div class="container searchContainer">
+			<div class="search card card-body form-control">
+				<h2 class="mb-4">Search Github Profile Name</h2>
+				<label class="lead mb-2" for="searchContainer">Enter a username</label>
+				<div class="d-flex justify-content-center align-items-center gap-3">
+					<input
+						type="text"
+						class="form-control"
+						id="searchUser"
+						placeholder="e.g. johndoe"
+					/>
+					<button class="btn btn-primary btn-m my-3 px-3" id="searchButton">
+						Search
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="profile"></div>
+
+		<!-- Bootstrap JS -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+			integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="github.js"></script>
+		<script src="ui.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
